@@ -44,7 +44,7 @@
     transition: 0.2s;
     transform: scale(1.1);
     background-color: #d7fdeb;
-    cursor: url(//images/icon-pata.png), auto;
+    cursor: pointer;
 }
 .link-saude{
     text-decoration: none;
@@ -66,7 +66,7 @@
     font-size: 25px;
 }
 .modulo-elements:hover, #modulo-icon:hover, .modulo-text:hover{
-    cursor: url(//images/icon-pata.png), auto;
+    cursor: pointer;
 }
 /* .modulo-elements{
     display: flex;
@@ -113,9 +113,8 @@
 }
 .consultas:hover, .exames:hover, .vacinas:hover, .cirurgias:hover{
     background-color: #dafcec;
-    cursor: url(//images/icon-pata.png), auto;
+    cursor: pointer;
     .title-element{ color: rgb(14, 137, 104);}
-
 }
 .title-element{
     font-weight: bold;
