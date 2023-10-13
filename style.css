@@ -1,0 +1,497 @@
+/*  MENU   */
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.menu{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+}
+.menu-text{
+    width: 40%;
+    margin: 0% 5%;
+}
+.logotipo{
+    font-family: 'Boogaloo', cursive;
+    font-size: 38px;
+    color: #DA8B00;
+    display: flex;
+    margin: 1.5% 5%;
+    width: 15%;
+}
+.logotipo span{
+    margin: 1%;
+}
+.nav-link{
+    margin-left: 7%;
+    font-size: 17px;
+    color: #02007B;
+    font-weight: 600;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+.nav-link:hover{
+    color: #C77700;
+}
+.icons {
+    width: 20%;
+    display: flex;
+    flex-direction: row; 
+    align-items: center; 
+    justify-content: flex-end; 
+}
+.icons span {
+    cursor: pointer;
+    font-size: 30px;
+}
+.icons span:hover{
+    color: #cf6100;
+}
+/*  LADING-PAGE INÍCIO  */
+.home{
+    background-color: #FFEDCD;
+    width: 90%;
+    height: 550px;
+    margin-left: 5%;
+    border-radius: 23px;
+}
+.home-elements{
+    display: flex;
+    justify-content: space-between;
+    margin: 0% 4%;
+    text-align: center;
+    padding-top: 4%;
+}
+.textos{
+    width: 45%;
+    margin-left: 5%;
+    padding-top: 9%;
+}
+.home-text-title{
+    color: #C77700;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 50px;
+    text-align: center;
+}
+.home-text{
+    color: #C77700;
+    font-family: sans-serif;
+    font-size: 25px;
+    text-align: justify;
+}
+/*MÓDULOS INFORMATIVOS*/
+.modulo-informativo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 1%;
+}
+.modulo-informativo div{
+    background-color: #e8e8e8;
+    margin-top: 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 15%;
+    height: 130px;
+    padding: 15px;
+    border-radius: 8px;
+
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+
+    margin-left: 8%;
+
+}
+.material-symbols-outlined{
+    font-size: 35px;
+    margin: 5%;
+}
+/*ALIMENTOS*/
+.produtos-alimentos, .produtos-higiene, .produtos-acessorios{
+    display: flex;
+    justify-content: space-around;
+}
+.alimentos-title, .higiene-title{
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+   
+    margin-top: 2%;
+    margin-left: 5%;
+}
+.card, .card-higiene, .card-acessorios{
+    background-color: rgb(255, 255, 255);
+    width: 18rem;
+    height: 21rem;
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+    margin: 1%;
+}
+.card:hover, .card-higiene:hover, .card-acessorios:hover{
+    transition: 0.2s;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.card-img-top{
+    margin: 5% 10%;
+}
+.card-body{
+    text-align: center;
+    padding: 3%;
+}
+.card-title{
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 17px;
+}
+.card-preco{
+    font-family: sans-serif;
+    font-size: 18px;
+    color: #02007B;
+    font-weight: bold;
+    margin: 10px;
+}
+/*SAÚDE*/
+.saude{
+    background-color: #CBFFE6;
+    margin-top: 1%;
+    font-family: sans-serif;
+    color: #02007B;
+}
+.saude h1, .servicos h1{
+    text-align: center;
+    padding-top: 3%;
+}
+.saude-conteudo, .servicos-conteudo{
+    display: flex;
+    justify-content: space-around;
+    font-family: sans-serif;
+}
+.saude-text, .servicos-text{
+    padding-top: 3%;
+    padding-right: 5%;
+    font-size: 22px;    
+}
+.saude-text-title, .servicos-text-title{
+    margin: 5% 0%;
+    width: 100%;
+}
+.saude-text li, .servicos-text li{
+    margin: 3% 7%;
+    font-size: 20px;
+}
+.saude button, .servicos button{
+    background-color:#00E791;
+    border-radius: 10px;
+    border: none;
+    width: 100%;
+    height: 10%;
+    font-size: 20px;
+    color: #02007B;
+    font-weight: bold;
+    margin-top: 2%;
+    cursor: pointer;
+}
+.saude button:hover{
+    background-color:#02ffa2;
+}
+/*HIGIENE*/
+.higiene-cards{
+    margin: 0% 4%;
+}
+.card-higiene-img, .card-acessorio-img{
+    height: 70%;
+}
+
+.btn-slider{
+    border: none;
+    background-color: rgb(255, 255, 255);
+    width: 1%;
+}
+.btn-slider span{
+    cursor: pointer;
+}
+.group-cards{
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    margin-top: 1%;
+}
+.card-higiene {
+    transition: transform 1s ease;
+    animation: slideInFromLeft 1.5s ease forwards; 
+
+}
+@keyframes slideInFromLeft {
+    from {
+      transform: translateX(-50%); /* Vai da direita para a esquerda */
+    }
+    /* to {
+      transform: translateX(0%);
+    } */
+  }
+/*ACESSÓRIOS*/
+.acessorios{
+    background-color: #eaeaeabb;
+    width: 90%;
+    margin-left: 5%;
+    border-radius: 23px;
+}
+.acessorios-title{
+    font-family: sans-serif;
+    text-align: center;
+    margin: 2% 5%;
+    padding-top: 3%;
+}
+#group-cards-acessorios{
+    margin-top: 0%;
+    margin-bottom: 3%;
+    width: 80%;
+}
+/*SERVIÇOS*/
+.servicos{
+    margin-top: 1%;
+    font-family: sans-serif;
+    color: #02007B;
+}
+.servicos-text{
+    font-size: 27px;
+    padding-left: 2%;
+    font-weight:500;
+    padding-top: 1%;
+}
+.servicos-text li{
+    font-size: 25px;
+}
+.servicos button{
+    background-color: #9ae3fb;
+    margin-top: 5%;
+}
+.servicos button:hover{
+    background-color: #bbeeff;
+}
+/*FOOTER*/
+footer{
+    background-color: #5F5F5F;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    font-family: sans-serif;
+}
+.title-footer{
+    font-size: 30px;
+    font-family: 'Boogaloo', cursive;
+    padding-top: 2%;
+}
+
+.endereco{
+    font-weight: bold;
+    margin: 1%;
+    color: #252525;
+}
+footer .menu-text{
+    margin-left: 0%;
+    display: flex;
+    margin-left: 30%;
+}
+footer .nav-link{
+    color: white;
+}
+footer .nav-link:hover{
+    color: #B9EDFF;
+}
+.creditos-dev{
+    color: #B9EDFF;
+    font-weight: bold;
+    padding-bottom: 1.5%;
+}
+.redes-socias{
+    display: flex;
+    margin-left: 35%;
+}
+.redes-socias a{
+    width: 15%;
+}
+.redes-socias img{
+    width: 15%;
+    margin: 8% 0%;
+    color: white;
+    cursor: pointer;
+}
+
+
+
+
+/*  RESPONSIVIDADE  */
+@media (max-width: 970px) {
+    /*  MENU  */
+    .menu{
+        flex-direction: column;
+    }
+    .logotipo{
+        width: 28%;
+        height: 60px;
+        margin: 2% 0% 2% 5%;
+    }
+    .logotipo img{
+        width: 25%;
+    }
+    .logotipo span{
+        margin: 2% 1%;
+        width: 100%;
+        font-size: 35px;
+    }
+    .menu-text{
+        width: 90%;
+        height: 20px;
+        /* margin: 0%; */
+        margin-bottom: 1%;
+    }
+    .nav-link{
+        margin-left: 4%;
+    }
+    /*  LANDING PAGE  */
+    .home{
+        width: 90%;
+        height: 400px;
+        margin-top: 2%;
+    }
+    .home-image img{
+        width: 80%;
+    }
+    .textos{
+        width: 50%;
+        margin-left: 5%;
+        padding-top: 11%;
+    }
+    .home-text-title{
+        font-size: 30px;
+    }
+    .home-text{
+        font-size: 20px;
+        text-align: justify;
+    }
+    /*MÓDULOS INFORMATIVOS*/
+    .modulo-informativo div{
+        width: 210px;
+        height: 130px;
+        padding: 15px;
+        font-size: 17px;
+        margin: 2%;
+    }
+    .material-symbols-outlined{
+        margin: 8%;
+    }
+    /*SAÚDE*/
+    .saude{
+        height: 550px;
+    }
+    .saude h1, .servicos h1{
+        font-size: 25px;
+    }
+    .saude-text{
+        padding-top: 3%;
+        padding-right: 1;
+        font-size: 18px;   
+    }
+    .saude-text-title, .servicos-text-title{
+        margin: 5% 0%;
+        width: 100%;
+        text-align: center;
+    }
+    .saude-img img{
+        height: 85%;
+        margin-left: 5%
+    }
+    .saude-text li, .servicos-text li{
+        margin: 3% 7%;
+        margin-left: 11%;
+        font-size: 18px;
+    }
+    .saude button, .servicos button{
+        margin-left: 2%;
+    }
+    /*PET FRIDAY*/
+    .acessorios{
+        width: 95%;
+        margin-left: 2.5%;
+    }
+    .card-acessorios{
+        height: 90%;
+        width: 50%;
+        margin: 1%;
+    }
+    .acessorios-title{
+        font-size: 23px;
+    }
+    #group-cards-acessorios{
+        margin-top: 0%;
+        margin-bottom: 3%;
+        width: 95%;
+    }
+    .h5{
+        font-size: 15px;
+    }
+    .card-acessorio-img img{
+        width: 50%;
+    }
+    .card-body{
+        padding: 0%;
+    }
+    /*SERVIÇOS*/
+    .servicos{
+        padding-bottom: 3%;
+    }
+    .servicos-text{
+        font-size: 20px;
+        width: 80%;
+        margin-left: 5%;
+    }
+    .servicos-text li{
+        font-size: 20px;
+        margin-left: 5%;
+    }
+    .servicos button{
+        background-color: #9ae3fb;
+        margin-top: 3%;
+        font-size: 85%;
+        height: 13%;
+        width: 95%;
+    }
+    .servicos-img img{
+        width: 100%;
+    }
+    /*FOOTER*/
+    .title-footer{
+        font-size: 27px;
+    }
+    .redes-socias{
+        margin-left: 43%;
+    }
+    .redes-socias img{
+        width: 5%;
+        margin: 2%;
+        color: white;
+        cursor: pointer;
+    }
+    footer .menu-text{
+        margin-left: 20%;
+    }
+    .endereco{
+        margin: 1%;
+        font-size: 90%;
+    }
+    .creditos-dev{
+        font-size: 90%;
+    }
+}
+@media (max-width: 700px) {
+    *{
+        width: 100%;
+    }
+}

@@ -1,0 +1,493 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: sans-serif; 
+}
+/*INDEX CLÍNICA BALLTZE*/
+.menu{
+    padding: 2%;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(0, 118, 126);
+    background-color: #CBFFE6;
+}
+.menu-back {
+    height: 100%;
+    padding: 0.3%;
+    padding-left: 3%;
+    background-color: #9df4d3;
+}
+#icon-voltar{
+    cursor: pointer;
+    font-size: 30px;
+}
+.modulos{
+    display: flex;
+    margin-left: 20% ;
+}
+.modulo-exames, .modulo-consulta, .modulo-vacinas, .modulo-cirurgias {
+    margin: 2%;
+    width: 34%;
+    height: 220px;
+    padding: 10px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    border-radius: 15px;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #f4f4f4;
+}
+.modulo-exames:hover, .modulo-consulta:hover, .modulo-vacinas:hover, .modulo-cirurgias:hover {
+    transition: 0.2s;
+    transform: scale(1.1);
+    background-color: #d7fdeb;
+    cursor: url(/images/icon-pata.png), auto;
+}
+.link-saude{
+    text-decoration: none;
+    width: 101%;
+}
+.modulo-elements{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+#modulo-icon{
+    margin: 20%;
+    font-size: 40px;
+    color: #25a686; 
+}
+.modulo-text{
+    color: black;
+    font-size: 25px;
+}
+.modulo-elements:hover, #modulo-icon:hover, .modulo-text:hover{
+    cursor: url(/images/icon-pata.png), auto;
+}
+/* .modulo-elements{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+} */
+
+/*LISTAGENS DE CONSULTA, EXAME, VACINA E CIRÚRGIA*/
+.sub-menu{
+    padding: 0.5%;
+    font-size: 18px;
+    color: #1b4538;
+    font-weight: bold;
+    text-align: center;
+    background-color: rgb(165, 255, 208);
+}
+.sub-menu-elements{
+    width: 57%;
+    display: flex;
+    justify-content: space-around;
+}
+.group-back{
+    width: 70%;
+    text-align: left;
+}
+#icon-back{
+    font-size: 25px;
+    cursor: pointer;
+    text-align: left;
+    color: #1b4538;
+}
+#icon-back:hover, #icon-voltar:hover{
+    color: #25a686;
+}
+.consultas, .exames, .vacinas, .cirurgias{
+    margin: 1% 2%;
+    display: flex;
+    padding: 0.6%;
+    font-size: 18px;
+    border-radius: 10px;
+    justify-content: space-between;
+    background-color: rgb(241, 241, 241);
+}
+.consultas:hover, .exames:hover, .vacinas:hover, .cirurgias:hover{
+    background-color: #dafcec;
+    cursor: url(/images/icon-pata.png), auto;
+    .title-element{ color: rgb(14, 137, 104);}
+
+}
+.title-element{
+    font-weight: bold;
+}
+.preco-text{
+    color: rgb(120, 120, 120);
+}
+.preco{
+    font-weight: bold;
+    color: rgb(14, 137, 104);
+}
+#icon{
+   font-size: 30px;
+   color: rgb(14, 137, 104);
+}
+.title-element, .group-preco, .group-icon{
+    padding-top: 0.4%;
+    margin: 0% 3% 0% 3%;
+}
+#preco-consulta-1{ margin-left: -3%; }
+#preco-consulta-2{ margin-left: -3.5%; }
+#preco-consulta-3{ margin-left: -4.8%; }
+#preco-consulta-4{ margin-left: -6.4%; }
+#preco-consulta-5{ margin-left: 0.2%; }
+#preco-consulta-6{ margin-left: -3.4%; }
+#preco-consulta-7{ margin-left: -1%; }
+#preco-consulta-8{ margin-left: -2.4%; }
+#preco-consulta-9{ margin-left: -0.5%; }
+
+#preco-exame-1{ margin-left: -5.5%; }
+#preco-exame-2{ margin-left: -5%; }
+#preco-exame-3{ margin-left: -9.7%; }
+#preco-exame-4{ margin-left: -15.8%; }
+#preco-exame-5{ margin-left: -6.6%; }
+#preco-exame-6{ margin-left: -0.3%; }
+#preco-exame-7{ margin-left: -13.2%; }
+#preco-exame-8{ margin-left: -2.8%; }
+#preco-exame-9{ margin-left: -9.8%; }
+
+#preco-vacina-1{ margin-left: -3.1%; }
+#preco-vacina-2{ margin-left: -5.2%; }
+#preco-vacina-3{ margin-left: -6.1%; }
+#preco-vacina-4{ margin-left: -6.7%; }
+#preco-vacina-5{ margin-left: -18.1%; }
+#preco-vacina-6{ margin-left: -6.6%; }
+#preco-vacina-7{ margin-left: -5%; }
+#preco-vacina-8{ margin-left: -8.2%; }
+#preco-vacina-9{ margin-left: -9.2%; }
+
+#preco-cirurgia-1{ margin-left: -0.5%; }
+#preco-cirurgia-2{ margin-left: -0.1%; }
+#preco-cirurgia-3{ margin-left: -5.1%; }
+#preco-cirurgia-4{ margin-left: -11.9%; }
+#preco-cirurgia-5{ margin-left: -12.4%; }
+#preco-cirurgia-6{ margin-left: -16.3%; }
+#preco-cirurgia-7{ margin-left: -16.3%; }
+#preco-cirurgia-8{ margin-left: -5.2%; }
+#preco-cirurgia-9{ margin-left: -6.4%; }
+
+footer{
+    margin-top: 8%;
+}
+#footer-saude{
+    margin-top: 2%;
+}
+.creditos-dev{
+    color: #8e8e8e;
+    font-weight: bold;
+    padding-bottom: 1.5%;
+    text-align: center;
+}
+
+/*Input Modal*/
+.modal-body{
+    text-align: center;
+}
+.nome, .data{
+    margin: 2%;
+}
+.nomePaciente{
+    border: 1px solid rgb(176, 176, 176);
+    border-radius: 10px;
+    padding: 1px;
+    margin: 1px;
+    width: 50%;
+    padding-left: 3%;
+}
+/*Estilização do Calendário*/
+.calendarioAgendamento{
+    margin: 1.5%;
+    width: 50%;
+    height: 33px;
+    padding: 10px;
+    font-size: 17px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 1px solid rgb(176, 176, 176);
+}
+input[type="date"]:focus, .nomePaciente:focus {
+    border: 1px solid #4aa1ff;
+    outline: none;
+    box-shadow: 0 0 10px 2px rgba(0, 123, 255, 0.344); 
+}
+/*Estilização de Horários*/
+.horariosDisponiveis{
+    padding: 1%;
+}
+.horario {
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid #c3c3c3;
+    border-radius: 10px;
+    text-align: center;   
+}
+.horario:hover{
+    cursor: pointer;
+    background-color: #dcdcdc;
+}
+.modal-body strong{
+    color: #0a9292;
+}
+
+
+
+/*RESPONSIVIDADE TELA INDEX DA CLINICA VETERINÁRIA*/
+@media (max-width: 970px) {
+    #modulo-icon{
+        margin: 8%;
+        font-size: 35px;
+    }
+    .modulo-text{
+        color: black;
+        font-size: 23px;
+    }
+    /*TELA DE CONSULTA*/
+    .group-back{
+        width: 5%;
+    }
+    .sub-text{
+        width: 100%;
+        font-size: 18px;
+    }
+    /*Consultas*/
+    #preco-consulta-1{ margin-left: 0%; }
+    #preco-consulta-2{ margin-left: -1%; }
+    #preco-consulta-3{ margin-left: -3.2%; }
+    #preco-consulta-4{ margin-left: -6.4%; }
+    #preco-consulta-5{ margin-left: 7%; }
+    #preco-consulta-6{ margin-left: 0%; }
+    #preco-consulta-7{ margin-left: 4%; }
+    #preco-consulta-8{ margin-left: 1.7%; }
+    #preco-consulta-9{ margin-left: 5.8%; }
+    /*Exames*/
+    #preco-exame-1{ margin-left: 0%; }
+    #preco-exame-2{ margin-left: 1%; }
+    #preco-exame-3{ margin-left: -8.5%; }
+    #preco-exame-4{ margin-left: -20.5%; }
+    #preco-exame-5{ margin-left: -2.2%; }
+    #preco-exame-6{ margin-left: 10.5%; }
+    #preco-exame-7{ margin-left: -15.3%; }
+    #preco-exame-8{ margin-left: 5.5%; }
+    #preco-exame-9{ margin-left: -8.6%; }
+    /*Vacina*/
+    #title-element-vacina{
+        width: 50%;
+    }
+    #preco-vacina-1, #preco-vacina-2, #preco-vacina-3, #preco-vacina-4, #preco-vacina-5, #preco-vacina-6, #preco-vacina-7, #preco-vacina-8, #preco-vacina-9{ 
+        margin-left: -20%; 
+    }
+    /*Cirurgia*/
+    #title-element-cirurgia{
+      width: 55%;
+      margin-right: 5%;
+    }
+    #preco-cirurgia-1, #preco-cirurgia-2, #preco-cirurgia-3, #preco-cirurgia-5, #preco-cirurgia-6, #preco-cirurgia-8, #preco-cirurgia-9{
+      margin-left: -17.5%; 
+    }
+    #preco-cirurgia-4, #preco-cirurgia-7{ margin-left: -15.9%; }
+}
+
+@media (max-width: 700px) {
+    .modulos{
+        display: flex;
+        flex-direction: column;
+    }
+    .modulo-exames, .modulo-consulta, .modulo-vacinas, .modulo-cirurgias {
+        width: 70%;
+        height: 200px;
+    }
+    /*TELA DE CONSULTA*/
+    .consultas{
+        margin: 2%;
+        padding: 2%;
+    }
+    #preco-consulta-1{ margin-left: 0%; }
+    #preco-consulta-2{ margin-left: -1.5%; }
+    #preco-consulta-3{ margin-left: -5%; }
+    #preco-consulta-4{ margin-left: -9.5%; }
+    #preco-consulta-5{ margin-left: 9%; }
+    #preco-consulta-6{ margin-left: -1%; }
+    #preco-consulta-7{ margin-left: 5%; }
+    #preco-consulta-8{ margin-left: 1.5%; }
+    #preco-consulta-9{ margin-left: 7%; }
+    /*Exames*/
+    #title-exame{
+        font-size: 17px;
+        width: 40%;
+    }
+    .exames, .vacinas, .cirurgias{
+        margin-top: 2%;
+    }
+    #preco-exame-1, #preco-exame-2, #preco-exame-3, #preco-exame-4, #preco-exame-7, #preco-exame-8 { 
+        margin-left: 0%; 
+    }
+    #preco-exame-5, #preco-exame-6, #preco-exame-9 { 
+        margin-left: -2%; 
+    }
+    /*Vacina*/
+    #title-element-vacina{
+        width: 50%;
+        font-size: 17px;
+    }
+    .preco-text, .preco{
+        font-size: 17px;
+    }
+    /*Cirurgia*/
+    #title-element-cirurgia, #valor{
+        font-size: 16px;
+    }
+    #title-element-cirurgia{
+        margin-right: 10%;
+    }
+}
+
+@media (max-width: 650px) {
+    #preco-consulta-1{ margin-left: 0%; }
+    #preco-consulta-2{ margin-left: -1.5%; }
+    #preco-consulta-3{ margin-left: -5%; }
+    #preco-consulta-4{ margin-left: -9.5%; }
+    #preco-consulta-5{ margin-left: 9%; }
+    #preco-consulta-6{ margin-left: -1%; }
+    #preco-consulta-7{ margin-left: 5%; }
+    #preco-consulta-8{ margin-left: 1.5%; }
+    #preco-consulta-9{ margin-left: 7%; }
+
+    #title-element-cirurgia, #valor{
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 500px) {
+    .modulos{
+        margin-top: 1%;
+        margin-left: 15%;
+    }
+    .link-saude{
+        padding: 19%;
+    }
+    .modulo-exames, .modulo-consulta, .modulo-vacinas, .modulo-cirurgias {
+        width: 75%;
+        height: 180px;
+    }
+    /*TELA DE CONSULTA*/
+    .consultas{
+        margin: 3%;
+    }
+    .title-element{
+        font-size: 16px;
+        margin-top: 2%;
+    }
+    .group-preco{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-size: 16px;
+    }
+    /*Vacina*/
+    #title-element-vacina{
+        width: 50%;
+        font-size: 15px;
+    }
+    .preco-text, .preco{
+        font-size: 15.5px;
+    }
+    .vacinas{
+        margin: 2%;
+    }
+   
+}
+
+@media (max-width: 450px) {
+    .title-element{
+        font-size: 14px;
+    }
+    #preco-consulta-1{ margin-left: 5%; }
+    #preco-consulta-2{ margin-left: 3.5%; }
+    #preco-consulta-3{ margin-left: -1%; }
+    #preco-consulta-4{ margin-left: -7%; }
+    #preco-consulta-5{ margin-left: 18%; }
+    #preco-consulta-6{ margin-left: 3%; }
+    #preco-consulta-7{ margin-left: 12%; }
+    #preco-consulta-8{ margin-left: 7%; }
+    #preco-consulta-9{ margin-left: 15%; }
+
+    .menu{
+        font-size: 20px;
+    }
+    #sub-text-exame{
+        font-size: 15px;
+    }
+    #icon-back{
+        margin-top: 55%;
+        font-size: 100%;
+    }
+    #title-exame, .group-preco{
+        font-size: 14px;
+    }
+    #icon{
+        font-size: 20px;
+        margin-top: 50%;
+    }
+    .exames, .vacinas{
+        margin-top: 3%;
+        padding: 1%;
+    }
+    #title-element-vacina{
+        margin-right: 17%;
+    }
+     /*Cirurgia*/
+    .cirurgias{
+        margin: 2%;
+        padding: 2%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/*Responsividade*/
+@media (max-width: 1100px) {
+   /* Estilos para .sub-menu */
+.sub-menu {
+    text-align: center;
+    background-color: rgb(165, 255, 208);
+    padding: 1rem; /* Melhor legibilidade e espaço uniforme */
+    font-size: 20px; /* Ligeiramente maior para melhor destaque */
+    font-weight: bold;
+    color: #1b4538;
+  }
+  
+  /* Estilos para .sub-menu-elements */
+  .sub-menu-elements {
+    width: 100%; /* Usar 100% para ocupar toda a largura disponível */
+    max-width: 600px; /* Define uma largura máxima para evitar que o conteúdo se espalhe muito */
+    margin: 0 auto; /* Centralize horizontalmente */
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Alinhe verticalmente ao centro */
+  }
+  
+  /* Estilos para .sub-menu-elements a */
+  .sub-menu-elements a {
+    width: auto; /* Redundante aqui, pois o elemento <a> se ajustará automaticamente ao conteúdo */
+    text-align: left;
+  }
+  
+  }
+  
+  
