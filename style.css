@@ -11,7 +11,7 @@
     align-items: center;
 }
 .menu-text{
-    width: 40%;
+    width: 60%;
     margin: 0% 5%;
 }
 .logotipo{
@@ -295,9 +295,8 @@ footer{
     color: #252525;
 }
 footer .menu-text{
-    margin-left: 0%;
     display: flex;
-    margin-left: 30%;
+    margin-left: 20%;
 }
 footer .nav-link{
     color: white;
